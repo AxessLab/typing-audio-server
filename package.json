@@ -1,0 +1,21 @@
+{
+  "name": "typing-audio-server",
+  "description": "Serving audio such as sound effects, music, and TTS",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AxessLab/typing-audio-server.git"
+  },
+  "license": "MIT",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@google-cloud/text-to-speech": "^1.4.0",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.4",
+    "express": "^4.17.1",
+    "helmet": "^3.21.1",
+    "morgan": "^1.9.1"
+  }
+}
