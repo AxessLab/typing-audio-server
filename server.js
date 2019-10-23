@@ -53,7 +53,7 @@ app.get('/speech', (req, res) => {
     console.log(`File found for text '${text}' with '${parameters}'`);
     res.sendFile(`/tmp/${fileName}`);
 
-  // Generate file with that encoding if not found
+  // Generate file with those parameters if not found
   } else {
     console.log(`Requesting file with text '${text}' and '${parameters}'`);
     const newFileName = uuid(); // We'll just use UUID so that we won't have to deal with malicious text input
