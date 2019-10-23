@@ -53,9 +53,6 @@ app.get('/speech', (req, res) => {
     console.log(`File found for text '${text}' with '${parameters}'`);
     res.sendFile(`/tmp/${fileName}`);
 
-    console.log('Rate is: ', req.query.rate);
-    console.log('Pitch is: ', req.query.pitch);
-
   // Generate file with that encoding if not found
   } else {
     console.log(`Requesting file with text '${text}' and '${parameters}'`);
