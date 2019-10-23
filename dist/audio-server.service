@@ -1,0 +1,14 @@
+[Unit]
+Description=Audio server sound effects, music, and TTS
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=typing
+WorkingDirectory=/home/typing/live
+Environment="PORT=3000"
+ExecStart=/home/typing/.nvm/versions/node/v12.12.0/bin/node server.js
+
+[Install]
+WantedBy=multi-user.target
